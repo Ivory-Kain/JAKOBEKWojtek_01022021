@@ -1,23 +1,95 @@
 <!DOCTYPE html>
-<meta charset="utf-8" />
-<meta
-  name="viewport"
-  content="width=device-width, initial-scale1, user-scalable=0"
-/>
-<link rel="stylesheet" href="style.css" />
-<title>ohmyfood</title>
-<!--curseur perso-->
-<header></header>
-<!--Logo-->
-<!--search bar-->
-<!--section "Réserver le menu"-->
-<!--nav "Fonctionnement"-->
-<body></body>
-<!--Section "Restaurants"-->
-<!--carte restaurant avec icone coeur-->
-<!-- /!\ ajouter l'encart "Nouveau"-->
-<footer></footer>
-<!--Logo"petite taille"-->
-<!--icone *2 "handcheck et couverts"-->
-<!--mentions-->
-<!--Contact-->
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale1, user-scalable=0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/aacc6b388d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>ohmyfood</title>
+  </head>
+  <!--curseur perso-->
+  <body>
+    <div id="bloc_page">
+      <header>
+        <img src="images\logo\ohmyfood.png" alt="logo" id="logo" />
+        <div class="searchBar">
+          <i class="fas fa-map-marker-alt fa-1x"></i>
+          <input
+            type="text"
+            class="searchInput"
+            placeholder="Votre recherche..."
+          />
+
+          <button type="submit" class="searchbutton">
+            <strong>Rechercher</strong>
+            <i class="fas fa-search fa-1x"></i>
+          </button>
+        </div>
+        <div class="reservation">
+          <h1>Réservez le menu qui vous convient</h1>
+          <p>
+            Découvrez des restaurants d'exception, séléctionnés par nos soins.
+          </p>
+          <button class="explor" type="button">
+            <span class="bold">Explorer nos restaurants</span>
+          </button>
+        </div>
+        <div class="filters">
+          <p><strong>Fonctionnement</strong></p>
+          <div class="filterContainer">
+            <button type="button" class="filterBtn">
+              <span class="filterBtnIcon"><i class="#"></i></span>
+              <!--Icon a mettre-->
+              <span class="filterBtnText">Choisissez un restaurant</span>
+            </button>
+
+            <button type="button" class="filterBtn">
+              <span class="filterBtnIcon"><i class="#"></i></span
+              ><!--Icon a mettre-->
+              <span class="filterBtnText">Composez votre menu</span>
+            </button>
+
+            <button type="button" class="filterBtn">
+              <span class="filterBtnIcon"><i class="#"></i></span
+              ><!--Icon a mettre-->
+              <span class="filterBtnText">Dégustez au restaurant</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div id="restautants" class="contentContainer">
+          <a href="#">
+            <div class="card bottomDescription">
+              <img
+                src="images\restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="La palette du goût"
+              />
+
+              <div class="cardDescription">
+                <p><strong>La palette du goût</strong></p>
+                <p>Ménilmontant</p>
+
+                <div class="heart"><!--icon coeur--></div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </main>
+      <!--Section "Restaurants"-->
+      <!--carte restaurant avec icone coeur-->
+      <!-- /!\ ajouter l'encart "Nouveau"-->
+      <footer></footer>
+      <!--Logo"petite taille"-->
+      <!--icone *2 "handcheck et couverts"-->
+      <!--mentions-->
+      <!--Contact-->
+    </div>
+  </body>
+</html>
