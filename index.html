@@ -17,19 +17,18 @@
   <body>
     <div id="bloc_page">
       <header>
-        <img src="images\logo\ohmyfood.png" alt="logo" id="logo" />
+        <div class="logo">
+          <img src="images\logo\ohmyfood.png" alt="logo" id="logo" />
+        </div>
+      </header>
+      <main>
         <div class="searchBar">
-          <i class="fas fa-map-marker-alt fa-1x"></i>
+          <i class="fas fa-map-marker-alt fa-lg"></i>
           <input
             type="text"
             class="searchInput"
             placeholder="Votre recherche..."
           />
-
-          <button type="submit" class="searchbutton">
-            <strong>Rechercher</strong>
-            <i class="fas fa-search fa-1x"></i>
-          </button>
         </div>
         <div class="reservation">
           <h2>Réservez le menu qui vous convient</h2>
@@ -44,27 +43,34 @@
           <p><strong>Fonctionnement</strong></p>
           <div class="filterContainer">
             <button type="button" class="filterBtn">
+              <p>1</p>
               <span class="filterBtnIcon"
-                ><i class="fas fa-mobile-alt"></i
+                ><i class="fas fa-mobile-alt fa-lg"></i
               ></span>
 
               <span class="filterBtnText">Choisissez un restaurant</span>
             </button>
 
             <button type="button" class="filterBtn">
-              <span class="filterBtnIcon"><i class="fas fa-list-ul"></i></span>
+              <p>2</p>
+              <span class="filterBtnIcon"
+                ><i class="fas fa-list-ul fa-lg"></i
+              ></span>
               <span class="filterBtnText">Composez votre menu</span>
             </button>
 
             <button type="button" class="filterBtn">
-              <span class="filterBtnIcon"><i class="fas fa-store"></i></span>
+              <p>3</p>
+              <span class="filterBtnIcon"
+                ><i class="fas fa-store fa-lg"></i
+              ></span>
               <span class="filterBtnText">Dégustez au restaurant</span>
             </button>
           </div>
         </div>
-      </header>
-      <main>
-        <div id="restautants" class="contentContainer">
+
+        <div id="restaurants" class="contentContainer">
+          <p><strong>Restaurants</strong></p>
           <a href="la_palette_du_gout.html">
             <div class="card bottomDescription">
               <img
@@ -74,7 +80,7 @@
               <div class="cardDescription">
                 <p><strong>La palette du goût</strong></p>
                 <p>Ménilmontant</p>
-                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="heart"><i class="far fa-heart fa-2x"></i></div>
               </div>
             </div>
           </a>
@@ -87,7 +93,7 @@
               <div class="cardDescription">
                 <p><strong>La note enchantée</strong></p>
                 <p>Charonne</p>
-                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="heart"><i class="far fa-heart fa-2x"></i></div>
               </div>
             </div>
           </a>
@@ -100,7 +106,7 @@
               <div class="cardDescription">
                 <p><strong>À la française</strong></p>
                 <p>Cité Rouge</p>
-                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="heart"><i class="far fa-heart fa-2x"></i></div>
               </div>
             </div>
           </a>
@@ -113,7 +119,7 @@
               <div class="cardDescription">
                 <p><strong>Le délice des sens</strong></p>
                 <p>Folie-Méricourt</p>
-                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="heart"><i class="far fa-heart fa-2x"></i></div>
               </div>
             </div>
           </a>
