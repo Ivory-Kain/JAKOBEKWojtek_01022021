@@ -1,0 +1,19 @@
+{
+  "name": "projet_3oc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass:./css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivory-Kain/JAKOBEKWojtek_3_01022021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivory-Kain/JAKOBEKWojtek_3_01022021/issues"
+  },
+  "homepage": "https://github.com/Ivory-Kain/JAKOBEKWojtek_3_01022021#readme"
+}
