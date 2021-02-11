@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -119,9 +120,6 @@ main {
 
 .filters h3 {
   font-size: x-large;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .filterContainer {
@@ -199,9 +197,7 @@ main {
 
 #restaurants h3 {
   font-size: x-large;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  text-align: left;
 }
 
 .bottomDescription {
@@ -249,7 +245,37 @@ main {
   position: absolute;
   left: 270px;
   top: 15px;
+}
+
+.heart .far {
+  position: absolute;
+  left: 0;
+  color: black;
   font-size: 25px;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+}
+
+.heart .fas {
+  position: absolute;
+  left: 0;
+  font-size: 25px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+}
+
+.heart:hover > .fas {
+  opacity: 1;
+}
+
+.heart:hover > .far {
+  opacity: 0;
 }
 
 .cardDescription {
