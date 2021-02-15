@@ -1,6 +1,73 @@
-body{
-    width: 100%;
+#bloc_page {
+	width: 360px;
 }
-h1{
-    font-family: 'Shrikhand', cursive;
+body {
+	width: 100%;
+	margin: 0;
+}
+h1 {
+	font-family: 'Shrikhand', cursive;
+	font-size: x-large;
+}
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+#logo {
+	width: 40%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+img {
+	width: 100%;
+}
+main {
+	height: auto;
+}
+
+footer {
+    background-color: #353535;
+
+    img {
+        width: 30%;
+        height: auto;
+        filter: invert(1);
+        -webkit-filter: invert(1);
+        -moz-filter: invert(1);
+        -o-filter: invert(1);
+        -ms-filter: invert(1);
+        margin: 20px 0 0 20px;
+    }
+
+    ul {
+        color: white;
+        text-decoration: white;
+        list-style: none;
+        margin-bottom: 0;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+}
+
+nav {
+    position: relative;
+}
+
+.about {
+    a {
+        position: absolute;
+        left: 45px;
+    }
+}
+
+ul {
+    li {
+        a {
+            text-decoration: none;
+            color: white;
+            border-bottom: none;
+        }
+    }
 }
