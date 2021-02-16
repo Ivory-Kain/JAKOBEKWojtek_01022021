@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
@@ -10,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style_2.css" />
     <script
       src="https://kit.fontawesome.com/aacc6b388d.js"
@@ -17,10 +22,11 @@
     ></script>
     <title>ohmyfood</title>
   </head>
+
   <body>
     <div id="bloc_page">
       <header>
-        <i class="fas fa-arrow-left"></i>
+        <a href="index.html"> <i class="fas fa-arrow-left"></i></a>
         <img src="images/logo/ohmyfood.png" alt="logo" id="logo" />
       </header>
       <main>
@@ -29,76 +35,87 @@
             src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
             alt="headImg"
           />
+          <div class="nameRestaurant">
+            <h1>Le Délice des sens</h1>
+            <div class="heart">
+              <i class="far fa-heart"></i><i class="fas fa-heart"></i>
+            </div>
+          </div>
         </div>
         <div class="menu">
-          <h1>Le Délice des sens</h1>
-          <div class="heart"><i class="far fa-heart"></i></div>
-          <nav>
-            <h3>ENTRÉES</h3>
-            <ul class="starters">
-              <li>
-                <p>
-                  <strong>Tartare de thon</strong><br />Assaisonné au
-                  yuzu<strong>25€</strong>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>Bouchée de homar croustillant</strong><br />Et sa
-                  farandole de petits légumes<strong>35€</strong>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>Velouté de cèpes</strong><br />
-                  Aux truffes<strong>20€</strong>
-                </p>
-              </li>
-            </ul>
-            <h3>PLATS</h3>
-            <ul class="dish">
-              <li>
-                <p>
-                  <strong>Poulet rôti aux herbes de provence</strong><br />
-                  Et sa crème de truffe<strong>40€</strong>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>Langouste rôtie</strong><br />Et ses légumes de saison
-                  <strong>35€</strong>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>Tartare de thon</strong><br />Assaisonné au
-                  yuzu<strong>25€</strong>
-                </p>
-              </li>
-            </ul>
-            <h3>DESSERTS</h3>
-            <ul class="dessert">
-              <li>
-                <p>
-                  <strong>Farandole de desserts</strong><br />
-                  Du chef<strong>18€</strong>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>Crème brulée</strong><br />Revisitée<strong
-                    >22€</strong
-                  >
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>Tiramisu</strong><br />
-                  À la noisettes<strong>23€</strong>
-                </p>
-              </li>
-            </ul>
-          </nav>
+          <h3>ENTRÉES</h3>
+          <ul class="starters">
+            <li>
+              <p>Tartare de thon</p>
+              <div class="menuDescription">
+                <p>Assaisonné au yuzu</p>
+                <p>25€</p>
+              </div>
+            </li>
+            <li>
+              <p>Bouchée de homard croustillant</p>
+              <div class="menuDescription">
+                <p>Et sa farandole de petits légumes</p>
+                <p>35€</p>
+              </div>
+            </li>
+            <li>
+              <p>Velouté de cèpes</p>
+              <div class="menuDescription">
+                <p>Aux truffes</p>
+                <p>20€</p>
+              </div>
+            </li>
+          </ul>
+          <h3>PLATS</h3>
+          <ul class="dish">
+            <li>
+              <p>Poulet rôti aux herbes de Provence</p>
+              <div class="menuDescription">
+                <p>Et sa crème de truffe</p>
+                <p>40€</p>
+              </div>
+            </li>
+            <li>
+              <p>Langouste rôtie</p>
+              <div class="menuDescription">
+                <p>Et ses légumes de saison</p>
+                <p>35€</p>
+              </div>
+            </li>
+            <li>
+              <p>Côte de boeuf Angus</p>
+              <div class="menuDescription">
+                <p>Et sa purée de panais</p>
+                <p>44€</p>
+              </div>
+            </li>
+          </ul>
+          <h3>DESSERTS</h3>
+          <ul class="dessert">
+            <li>
+              <p>Farandole de desserts</p>
+              <div class="menuDescription">
+                <p>Du chef</p>
+                <p>18€</p>
+              </div>
+            </li>
+            <li>
+              <p>Crème brulée</p>
+              <div class="menuDescription">
+                <p>Revisitée</p>
+                <p>22€</p>
+              </div>
+            </li>
+            <li>
+              <p>Tiramisu</p>
+              <div class="menuDescription">
+                <p>À la noisette</p>
+                <p>23€</p>
+              </div>
+            </li>
+          </ul>
+
           <button class="explore" type="button">
             <span class="bold">Commander</span>
           </button>
