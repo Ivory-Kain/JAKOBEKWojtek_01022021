@@ -1,20 +1,28 @@
+/*version SAMSUNG*/
+#bloc_page {
+	width: 360px;
+}
+
 body {
 	margin: 0;
-	font-family: "Roboto",sans-serif;
+	font-family: "Roboto", sans-serif;
 	width: 100%;
 }
+
 h1 {
 	width: 70%;
 	height: 100%;
-	font-family: "Shrikhand",cursive;
+	font-family: "Shrikhand", cursive;
 	font-size: x-large;
 }
+
 .menu {
 	ul {
 		padding-left: 20px;
 		display: grid;
 		gap: 10px;
 		padding-right: 20px;
+
 		li {
 			display: flex;
 			flex-direction: column;
@@ -29,8 +37,16 @@ h1 {
 			animation-delay: 200ms;
 			animation-duration: 2s;
 			animation-name: menuPop;
-			
-			
+			transform: perspective(1px) translateZ(0);
+			box-shadow: 2px 2px 3px #eaeaea;
+			transition-duration: 0.4s;
+			transition-property: transform;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+
+
 
 			p {
 				font-weight: 700;
@@ -38,39 +54,46 @@ h1 {
 				padding: 2px 20px;
 				margin: 0;
 			}
+
 			.menuDescription {
 				display: flex;
 				justify-content: space-between;
+
 				p {
 					font-size: 16px;
 					font-weight: 400;
+
 					&:first-child {
 						font-size: 12px;
 						overflow: hidden;
 						white-space: nowrap;
 						text-overflow: ellipsis;
 					}
+
 					&:last-child {
 						font-weight: 700;
+
 					}
 				}
 			}
 		}
 	}
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-@keyframes menuPop{
-	from{
+@keyframes menuPop {
+	from {
 		margin-top: 100%;
 	}
 
-	to{
+	to {
 		margin-top: 0%;
 	}
 }
+
 h3 {
 	display: block;
 	width: 10%;
@@ -80,9 +103,10 @@ h3 {
 	align-self: flex-start;
 	margin-bottom: 0;
 	border-bottom: solid;
-    border-bottom-color:#99E2D0;
+	border-bottom-color: #99E2D0;
 	padding-bottom: 3px;
 }
+
 .nameRestaurant {
 	display: flex;
 	flex-direction: row;
@@ -96,35 +120,42 @@ h3 {
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 }
+
 header {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	position: relative;
+
 	a {
 		position: absolute;
 		left: 20px;
 		color: #000;
 	}
 }
+
 #logo {
 	width: 40%;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
 .restaurantPicture {
 	img {
 		width: 100%;
 		height: 275px;
 		object-fit: cover;
 	}
+
 	position: relative;
 }
+
 .heart {
 	position: relative;
 	width: 25px;
 	height: 25px;
+
 	.far {
 		position: absolute;
 		left: 0;
@@ -132,47 +163,55 @@ header {
 		transition-duration: 1s;
 		color: #000;
 	}
+
 	.fas {
 		position: absolute;
 		left: 0;
 		font-size: 25px;
 		transition-duration: 1s;
-		background: linear-gradient(to bottom right,#ff79da,#9356dc);
+		background: linear-gradient(to bottom right, #ff79da, #9356dc);
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		opacity: 0;
 	}
+
 	&:hover {
 		>.fas {
 			opacity: 1;
 		}
+
 		>.far {
 			opacity: 0;
 		}
 	}
 }
+
 main {
 	height: auto;
 	position: relative;
 	background-color: #f6f6f6;
 }
+
 nav {
 	position: relative;
 }
+
 .explore {
 	border-radius: 20px;
 	height: 40px;
 	width: 180px;
 	margin-top: 30px;
 	margin-bottom: 60px;
-	background: linear-gradient(to bottom right,#ff79da,#9356dc);
+	background: linear-gradient(to bottom right, #ff79da, #9356dc);
 	font-weight: 700;
 	color: #fff;
 	border: 0;
 }
+
 footer {
 	background-color: #353535;
+
 	img {
 		width: 30%;
 		height: auto;
@@ -183,6 +222,7 @@ footer {
 		-ms-filter: invert(1);
 		margin: 20px 0 0 20px;
 	}
+
 	ul {
 		color: #fff;
 		text-decoration: #fff;
@@ -192,12 +232,14 @@ footer {
 		padding-left: 20px;
 	}
 }
+
 .about {
 	a {
 		position: absolute;
 		left: 45px;
 	}
 }
+
 ul {
 	li {
 		a {

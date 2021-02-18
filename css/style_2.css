@@ -1,3 +1,8 @@
+/*version SAMSUNG*/
+#bloc_page {
+  width: 360px;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -36,6 +41,13 @@ h1 {
   animation-delay: 200ms;
   animation-duration: 2s;
   animation-name: menuPop;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 2px 2px 3px #eaeaea;
+  transition-duration: 0.4s;
+  transition-property: transform;
+}
+.menu ul li:hover {
+  transform: scale(1.1);
 }
 .menu ul li p {
   font-weight: 700;
