@@ -1,0 +1,59 @@
+body {
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
+  animation-name: noScroll;
+}
+
+@keyframes noScroll {
+  0% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: visible;
+  }
+}
+.wraper {
+  position: fixed;
+  width: 360px;
+  height: 100%;
+  background-color: red;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-name: spinner;
+}
+
+@keyframes spinner {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=loader.css.map */

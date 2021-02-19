@@ -1,4 +1,6 @@
 /*version SAMSUNG*/
+@import "loader.scss";
+
 #bloc_page{
 	width: 360px;
 }
@@ -6,6 +8,17 @@
 body {
 	margin: 0;
 	font-family: "Roboto",sans-serif;
+}
+button{
+	cursor: pointer;
+	
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 10px rgb(170, 170, 170);
+	transition-duration: 0.4s;
+	&:hover{
+		box-shadow: 0 0 10px #7e7d7d;	
+		transform: scale(1.025);
+	}
 }
 header {
 	position: relative;
@@ -47,6 +60,7 @@ main {
 	flex-direction: column;
 }
 .reservation {
+	position: relative;
 	background-color: #f6f6f6;
 	height: 250px;
 	p {
@@ -57,7 +71,10 @@ main {
 		padding: 0 50px;
 	}
 }
-.explore {
+.explore { 
+	position: absolute;
+	left: 80px;
+	bottom: 50px;
 	border-radius: 20px;
 	height: 40px;
 	width: 200px;
@@ -66,6 +83,7 @@ main {
 	font-weight: 700;
 	color: #fff;
 	border: 0;
+	
 }
 .filters {
 	text-align: start;
@@ -75,6 +93,8 @@ main {
 	}
 }
 #restaurants {
+
+	
 	h3 {
 		font-size: x-large;
 		text-align: left;
@@ -86,6 +106,8 @@ main {
 	padding: 0 20px 50px;
 	height: auto;
 }
+
+
 .filterContainer {
 	display: grid;
 	gap: 20px;
@@ -143,13 +165,16 @@ main {
 	border-radius: 15px;
 	position: relative;
 	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 1px white;
+	box-shadow: 0 0 10px rgb(179, 178, 178);
 	transition-duration: 0.4s;
 	transition-property: transform;
+	animation-delay: 200ms;
+			animation-duration: 2s;
+			animation-name: menuPop;
 	
 
 	&:hover{
-		transform: scale(1.1);
+		transform: scale(1.025);
 	}
 
 	
@@ -170,6 +195,17 @@ main {
 		height: auto;
 	}
 }
+
+@keyframes menuPop {
+	from {
+		margin-top: 100%;
+	}
+
+	to {
+		margin-top: 0%;
+	}
+}
+
 footer {
 	img {
 		width: 100%;
