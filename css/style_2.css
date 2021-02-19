@@ -1,61 +1,4 @@
 /*version SAMSUNG*/
-body {
-  animation-delay: 3s;
-  animation-fill-mode: backwards;
-  animation-name: noScroll;
-}
-
-@keyframes noScroll {
-  0% {
-    overflow: hidden;
-  }
-  100% {
-    overflow: visible;
-  }
-}
-.wraper {
-  position: fixed;
-  width: 360px;
-  height: 100%;
-  background-color: red;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-  animation-name: spinner;
-}
-
-@keyframes spinner {
-  0% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0;
-  }
-  100% {
-    visibility: hidden;
-  }
-}
-.loader {
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 #bloc_page {
   width: 360px;
 }
@@ -113,9 +56,31 @@ h1 {
   box-shadow: 2px 2px 3px #eaeaea;
   transition-duration: 0.4s;
   transition-property: transform;
+  overflow: hidden;
 }
 .menu ul li:hover {
   transform: scale(1.07);
+}
+.menu ul li:hover > .iconCheck {
+  right: 0;
+  width: 60px;
+}
+.menu ul li:hover > .iconCheck i {
+  transform: rotate(720deg);
+}
+.menu ul li .iconCheck {
+  position: absolute;
+  right: -60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  width: 0;
+  height: 60px;
+  transition-duration: 500ms;
+}
+.menu ul li .iconCheck i {
+  transition-duration: 500ms;
 }
 .menu ul li p {
   font-weight: 700;
