@@ -1,25 +1,28 @@
 /*version SAMSUNG*/
 @import "loader.scss";
 
-#bloc_page{
+#bloc_page {
 	width: 360px;
 }
 
 body {
 	margin: 0;
-	font-family: "Roboto",sans-serif;
+	font-family: "Roboto", sans-serif;
 }
-button{
+
+button {
 	cursor: pointer;
-	
+
 	transform: perspective(1px) translateZ(0);
 	box-shadow: 0 0 10px rgb(170, 170, 170);
 	transition-duration: 0.4s;
-	&:hover{
-		box-shadow: 0 0 10px #7e7d7d;	
+
+	&:hover {
+		box-shadow: 0 0 10px #7e7d7d;
 		transform: scale(1.025);
 	}
 }
+
 header {
 	position: relative;
 	box-shadow: 0 0 5px gray;
@@ -27,6 +30,7 @@ header {
 	justify-content: center;
 	text-align: center;
 	flex-direction: column;
+
 	img {
 		width: auto;
 		height: 35px;
@@ -34,44 +38,53 @@ header {
 		margin-bottom: 15px;
 	}
 }
+
 .searchBar {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: #eaeaea;
 	height: 50px;
+
 	i {
 		padding-right: 20px;
 	}
+
 	input {
 		background-color: #eaeaea;
 		border: 0;
 		font-size: large;
 		width: 150px;
 	}
+
 	&::placeholder {
 		color: #000;
 	}
 }
+
 main {
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	flex-direction: column;
 }
+
 .reservation {
 	position: relative;
 	background-color: #f6f6f6;
 	height: 250px;
+
 	p {
 		padding-left: 25px;
 		padding-right: 25px;
 	}
+
 	h2 {
 		padding: 0 50px;
 	}
 }
-.explore { 
+
+.explore {
 	position: absolute;
 	left: 80px;
 	bottom: 50px;
@@ -79,26 +92,30 @@ main {
 	height: 40px;
 	width: 200px;
 	padding: 0;
-	background: linear-gradient(to bottom right,#ff79da,#9356dc);
+	background: linear-gradient(to bottom right, #ff79da, #9356dc);
 	font-weight: 700;
 	color: #fff;
 	border: 0;
-	
+
 }
+
 .filters {
 	text-align: start;
 	padding: 25px 20px 0;
+
 	h3 {
 		font-size: x-large;
 	}
 }
+
 #restaurants {
 
-	
+
 	h3 {
 		font-size: x-large;
 		text-align: left;
 	}
+
 	display: grid;
 	gap: 25px;
 	margin: 50px 0 0;
@@ -111,6 +128,7 @@ main {
 .filterContainer {
 	display: grid;
 	gap: 20px;
+
 	.filterBtn {
 		border-radius: 15px;
 		height: 50px;
@@ -121,6 +139,7 @@ main {
 		align-items: center;
 		border: 0;
 		background-color: #f6f6f6;
+
 		.filterNbr {
 			border-radius: 15px;
 			height: 50px;
@@ -140,24 +159,29 @@ main {
 			background-color: #9356dc;
 			color: #fff;
 		}
+
 		.filterBtnIcon {
 			position: absolute;
 			left: 40px;
 		}
+
 		.filterBtnText {
 			position: absolute;
 			left: 95px;
 		}
 	}
 }
+
 .filterBtn {
 	&:hover {
 		background-color: #ff79da1a;
+
 		>.filterBtnIcon {
 			color: #9356dc;
 		}
 	}
 }
+
 .bottomDescription {
 	width: 100%;
 	height: 200px;
@@ -169,15 +193,15 @@ main {
 	transition-duration: 0.4s;
 	transition-property: transform;
 	animation-delay: 200ms;
-			animation-duration: 2s;
-			animation-name: menuPop;
-	
+	animation-duration: 2s;
+	animation-name: menuPop;
 
-	&:hover{
+
+	&:hover {
 		transform: scale(1.025);
 	}
 
-	
+
 	.new {
 		color: #008766;
 		position: absolute;
@@ -190,6 +214,7 @@ main {
 		align-items: center;
 		justify-content: center;
 	}
+
 	img {
 		width: 100%;
 		height: auto;
@@ -218,7 +243,9 @@ footer {
 		-ms-filter: invert(1);
 		margin: 20px 0 0 20px;
 	}
+
 	background-color: #353535;
+
 	ul {
 		color: #fff;
 		text-decoration: #fff;
@@ -228,15 +255,18 @@ footer {
 		padding-left: 20px;
 	}
 }
+
 .contentContainer {
 	a {
 		text-decoration: none;
 	}
+
 	p {
 		text-align: start;
 		margin: 40px 5px 5px;
 	}
 }
+
 ul {
 	li {
 		a {
@@ -246,44 +276,51 @@ ul {
 		}
 	}
 }
+
 .about {
 	a {
 		position: absolute;
 		left: 45px;
 	}
 }
+
 .heart {
 	position: absolute;
 	left: 270px;
 	top: 15px;
+
 	.far {
 		position: absolute;
 		left: 0;
 		font-size: 25px;
 		transition-duration: 1s;
 		color: #000;
-		
+
 	}
+
 	.fas {
 		position: absolute;
 		left: 0;
 		font-size: 25px;
 		transition-duration: 1s;
-		background: linear-gradient(to bottom right,#ff79da,#9356dc);
+		background: linear-gradient(to bottom right, #ff79da, #9356dc);
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		opacity: 0;
 	}
+
 	&:hover {
 		>.fas {
 			opacity: 1;
 		}
+
 		>.far {
 			opacity: 0;
 		}
 	}
 }
+
 .cardDescription {
 	position: absolute;
 	bottom: 0;
@@ -291,10 +328,12 @@ ul {
 	width: 100%;
 	padding: 10px;
 	color: #000;
+
 	p {
 		margin: 5px;
 	}
 }
+
 nav {
 	position: relative;
 }
