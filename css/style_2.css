@@ -3,6 +3,10 @@
   width: 360px;
 }
 
+h3 {
+  text-transform: uppercase;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -67,20 +71,29 @@ h1 {
 }
 .menu ul li:hover > .iconCheck i {
   transform: rotate(720deg);
+  color: white;
 }
 .menu ul li .iconCheck {
   position: absolute;
-  right: -60px;
+  right: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
+  background-color: #99E2D0;
   width: 0;
   height: 60px;
   transition-duration: 500ms;
 }
 .menu ul li .iconCheck i {
+  color: white;
+  position: absolute;
+  left: 20px;
   transition-duration: 500ms;
+}
+.menu ul li .iconCheck p {
+  position: absolute;
+  left: -60px;
+  top: 30px;
 }
 .menu ul li p {
   font-weight: 700;
@@ -89,6 +102,7 @@ h1 {
   margin: 0;
 }
 .menu ul li .menuDescription {
+  width: auto;
   display: flex;
   justify-content: space-between;
 }
@@ -103,6 +117,9 @@ h1 {
   text-overflow: ellipsis;
 }
 .menu ul li .menuDescription p:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
 }
 
