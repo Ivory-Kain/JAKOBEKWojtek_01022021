@@ -1,7 +1,40 @@
 @media screen and (min-width: 769px) and (max-width: 1920px)
 {
+    @import "loader.scss";
+
     #bloc_page {
         width: auto;
     }
+        .explore{
+        left: 45%;
+        }
+        .filterContainer{
+            display: flex;            
+            justify-content: flex-start;
+            flex-direction: row;
+            width: auto;
+         }
+            s.filterContainer .filterBtn {
+   
+                width: 610px;
+               
+                }
+
+                #restaurants{
+                    display: grid;
+                    grid-template-columns: auto auto auto auto;
+                    grid-template-rows: 80px auto;
+                    gap: 20px 20px;
+                
+                    }
+                    .contentContainer h3{
+                        grid-column-start: 1;
+                        grid-column-end: 5;
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                     }
+                
+                     
+            
   
 }

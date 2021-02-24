@@ -64,7 +64,7 @@
   }
 
   .explore {
-    left: 284px;
+    left: 35%;
   }
 
   .filterContainer {
@@ -76,7 +76,8 @@
   }
 
   .filterContainer .filterBtn {
-    width: 354px;
+    max-width: 48%;
+    min-width: 20%;
   }
 
   .contentContainer a {

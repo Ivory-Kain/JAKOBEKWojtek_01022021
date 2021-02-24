@@ -1,4 +1,3 @@
-/*version SAMSUNG*/
 body {
   animation-delay: 3s;
   animation-fill-mode: backwards;
@@ -60,7 +59,7 @@ body {
   }
 }
 #bloc_page {
-  width: 360px;
+  width: 375px;
 }
 
 body {
@@ -136,7 +135,7 @@ main {
 
 .explore {
   position: absolute;
-  left: 80px;
+  left: 87px;
   bottom: 50px;
   border-radius: 20px;
   height: 40px;
@@ -267,7 +266,7 @@ footer {
 footer img {
   width: 100%;
   height: auto;
-  width: 30%;
+  width: 250px;
   filter: invert(1);
   -webkit-filter: invert(1);
   -moz-filter: invert(1);
