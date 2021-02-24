@@ -5,40 +5,46 @@
     #bloc_page {
         width: auto;
     }
-.explore{
+    .explore{
     left: 284px;
-}
-.filterContainer{
+    }
+
+    .filterContainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     flex-direction: row;
     width: auto;
-}
-.filterContainer .filterBtn {
+    }
+    .filterContainer .filterBtn {
    
     width: 354px;
    
-}
+    }
 
 
-.contentContainer a {
+    .contentContainer a {
     width: 354px;
-}
-#restaurants{
+    }
+    #restaurants{
     display: grid;
-grid-template-columns: repeat(2, 354px);
-grid-template-rows: 80px repeat(2, auto);
-grid-column-gap: 20px;
-grid-row-gap: 20px;
+    grid-template-columns: repeat(2, 354px);
+    grid-template-rows: 80px repeat(2, auto);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 
-}
-.contentContainer h3{
+    }
+    .contentContainer h3{
     grid-area: 1 / 1 / 2 / 3;
 
-}
-
-   
+    }  
+    .heart{
+    width: 25px;
+    height: 25px;
+    right: 20px;
+    position: absolute;    
+    top: 15px;
+    }
 
    
 }

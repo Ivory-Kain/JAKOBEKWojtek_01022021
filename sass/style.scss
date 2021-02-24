@@ -286,8 +286,11 @@ ul {
 
 .heart {
 	position: absolute;
-	left: 270px;
-	top: 15px;
+	width: 25px;
+    height: 25px;
+    right: 20px;
+     
+    top: 15px;
 
 	.far {
 		position: absolute;
@@ -328,6 +331,7 @@ ul {
 	width: 100%;
 	padding: 10px;
 	color: #000;
+	box-sizing: border-box;
 
 	p {
 		margin: 5px;

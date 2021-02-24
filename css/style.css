@@ -305,7 +305,9 @@ ul li a {
 
 .heart {
   position: absolute;
-  left: 270px;
+  width: 25px;
+  height: 25px;
+  right: 20px;
   top: 15px;
 }
 .heart .far {
@@ -340,6 +342,7 @@ ul li a {
   width: 100%;
   padding: 10px;
   color: #000;
+  box-sizing: border-box;
 }
 .cardDescription p {
   margin: 5px;

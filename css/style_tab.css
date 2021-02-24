@@ -94,6 +94,14 @@
   .contentContainer h3 {
     grid-area: 1/1/2/3;
   }
+
+  .heart {
+    width: 25px;
+    height: 25px;
+    right: 20px;
+    position: absolute;
+    top: 15px;
+  }
 }
 
 /*# sourceMappingURL=style_tab.css.map */
