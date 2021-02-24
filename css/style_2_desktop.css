@@ -1,3 +1,18 @@
+@media screen and (min-width: 769px) and (max-width: 1920px) {
+  #bloc_page {
+    width: auto;
+  }
 
+  .menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+  }
+  .menu ul li {
+    width: 30%;
+  }
+}
 
 /*# sourceMappingURL=style_2_desktop.css.map */
