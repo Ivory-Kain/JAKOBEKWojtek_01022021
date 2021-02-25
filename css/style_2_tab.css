@@ -10,6 +10,10 @@
     flex-direction: row;
     width: auto;
   }
+
+  footer img {
+    width: 20%;
+  }
 }
 
 /*# sourceMappingURL=style_2_tab.css.map */

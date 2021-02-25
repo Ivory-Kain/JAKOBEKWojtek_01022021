@@ -3,6 +3,9 @@
     #bloc_page {
         width: auto;
     }
+    #logo{
+        width: 30%;
+    }
 
     .menu{
         ul{
@@ -14,6 +17,12 @@
             li{
                 width: 30%;
             }
+        }
+    }
+
+    footer{
+        img{
+            width: 20%;
         }
     }
 }
