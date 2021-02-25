@@ -79,8 +79,10 @@ main {
 		padding-right: 25px;
 	}
 
-	h2 {
+	h1 {
 		padding: 0 50px;
+		font-weight: bold;
+		font-size:25px;
 	}
 }
 
@@ -104,7 +106,8 @@ main {
 	padding: 25px 20px 0;
 
 	h3 {
-		font-size: x-large;
+		font-size: 22px;
+		font-weight: bold;
 	}
 }
 
@@ -112,8 +115,9 @@ main {
 
 
 	h3 {
-		font-size: x-large;
+		font-size: 22px;
 		text-align: left;
+		font-weight: bold;
 	}
 
 	display: grid;

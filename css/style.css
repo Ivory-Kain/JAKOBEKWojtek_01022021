@@ -129,8 +129,10 @@ main {
   padding-left: 25px;
   padding-right: 25px;
 }
-.reservation h2 {
+.reservation h1 {
   padding: 0 50px;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .explore {
@@ -152,7 +154,8 @@ main {
   padding: 25px 20px 0;
 }
 .filters h3 {
-  font-size: x-large;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 #restaurants {
@@ -164,8 +167,9 @@ main {
   height: auto;
 }
 #restaurants h3 {
-  font-size: x-large;
+  font-size: 22px;
   text-align: left;
+  font-weight: bold;
 }
 
 .filterContainer {
