@@ -74,13 +74,15 @@
     flex-direction: row;
     width: auto;
   }
-
   .filterContainer .filterBtn {
     max-width: 45%;
   }
 
   .contentContainer a {
     width: 354px;
+  }
+  .contentContainer h3 {
+    grid-area: 1/1/2/3;
   }
 
   #restaurants {
@@ -89,10 +91,6 @@
     grid-template-rows: 80px repeat(2, auto);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-  }
-
-  .contentContainer h3 {
-    grid-area: 1/1/2/3;
   }
 
   .heart {
