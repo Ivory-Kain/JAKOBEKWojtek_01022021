@@ -347,6 +347,10 @@ ul li a {
   color: #000;
   box-sizing: border-box;
 }
+.cardDescription h4 {
+  margin: 5px;
+  display: flex;
+}
 .cardDescription p {
   margin: 5px;
 }
