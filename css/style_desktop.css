@@ -59,6 +59,10 @@
       transform: rotate(360deg);
     }
   }
+  body {
+    height: 100%;
+  }
+
   #bloc_page {
     width: auto;
     height: auto;

@@ -1,21 +1,10 @@
 @media screen and (min-width: 376px) and (max-width: 768px) {
   body {
-    -webkit-animation-delay: 3s;
     animation-delay: 3s;
-    -webkit-animation-fill-mode: backwards;
     animation-fill-mode: backwards;
-    -webkit-animation-name: noScroll;
     animation-name: noScroll;
   }
 
-  @-webkit-keyframes noScroll {
-    0% {
-      overflow: hidden;
-    }
-    100% {
-      overflow: visible;
-    }
-  }
   @keyframes noScroll {
     0% {
       overflow: hidden;
@@ -30,36 +19,15 @@
     height: 100%;
     background-color: #99E2D0;
     z-index: 10;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-animation-delay: 2s;
     animation-delay: 2s;
-    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    -webkit-animation-duration: 1s;
     animation-duration: 1s;
-    -webkit-animation-name: spinner;
     animation-name: spinner;
   }
 
-  @-webkit-keyframes spinner {
-    0% {
-      opacity: 1;
-    }
-    99% {
-      opacity: 0;
-    }
-    100% {
-      visibility: hidden;
-    }
-  }
   @keyframes spinner {
     0% {
       opacity: 1;
@@ -80,27 +48,14 @@
     border-right: 16px solid #9356DC;
     width: 120px;
     height: 120px;
-    -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;
   }
 
-  @-webkit-keyframes spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
   @keyframes spin {
     0% {
-      -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
     }
     100% {
-      -webkit-transform: rotate(360deg);
       transform: rotate(360deg);
     }
   }
@@ -113,21 +68,12 @@
   }
 
   .filterContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
     width: auto;
   }
-
   .filterContainer .filterBtn {
     max-width: 45%;
   }
@@ -135,21 +81,13 @@
   .contentContainer a {
     width: 354px;
   }
-
   .contentContainer h3 {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: 1/1/2/3;
   }
 
   #restaurants {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 354px [2];
     grid-template-columns: repeat(2, 354px);
-    -ms-grid-rows: 80px auto [2];
     grid-template-rows: 80px repeat(2, auto);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
@@ -163,6 +101,5 @@
     top: 15px;
   }
 }
-/*# sourceMappingURL=style_tab.css.map */
 
 /*# sourceMappingURL=style_tab.css.map */
