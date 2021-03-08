@@ -2,27 +2,23 @@
   #bloc_page {
     width: auto;
   }
-
   .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: auto;
   }
-
   footer img {
     width: 20%;
   }
 }
-/*# sourceMappingURL=style_2_tab.css.map */
-
 /*# sourceMappingURL=style_2_tab.css.map */

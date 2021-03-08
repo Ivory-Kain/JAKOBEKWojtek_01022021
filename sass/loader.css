@@ -1,10 +1,10 @@
 body {
   -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+          animation-delay: 3s;
   -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
   -webkit-animation-name: noScroll;
-  animation-name: noScroll;
+          animation-name: noScroll;
 }
 
 @-webkit-keyframes noScroll {
@@ -15,6 +15,7 @@ body {
     overflow: visible;
   }
 }
+
 @keyframes noScroll {
   0% {
     overflow: hidden;
@@ -23,6 +24,7 @@ body {
     overflow: visible;
   }
 }
+
 .wraper {
   position: fixed;
   width: 100%;
@@ -33,19 +35,19 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+          animation-delay: 2s;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-name: spinner;
-  animation-name: spinner;
+          animation-name: spinner;
 }
 
 @-webkit-keyframes spinner {
@@ -59,6 +61,7 @@ body {
     visibility: hidden;
   }
 }
+
 @keyframes spinner {
   0% {
     opacity: 1;
@@ -70,6 +73,7 @@ body {
     visibility: hidden;
   }
 }
+
 .loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
@@ -80,29 +84,28 @@ body {
   width: 120px;
   height: 120px;
   -webkit-animation: spin 1s linear infinite;
-  animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
 }
 
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
-/*# sourceMappingURL=loader.css.map */
-
 /*# sourceMappingURL=loader.css.map */

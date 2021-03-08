@@ -1,13 +1,12 @@
-@media screen and (min-width: 376px) and (max-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 1920px) {
   body {
     -webkit-animation-delay: 3s;
-    animation-delay: 3s;
+            animation-delay: 3s;
     -webkit-animation-fill-mode: backwards;
-    animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
     -webkit-animation-name: noScroll;
-    animation-name: noScroll;
+            animation-name: noScroll;
   }
-
   @-webkit-keyframes noScroll {
     0% {
       overflow: hidden;
@@ -34,21 +33,20 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+            animation-delay: 2s;
     -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
     -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+            animation-duration: 1s;
     -webkit-animation-name: spinner;
-    animation-name: spinner;
+            animation-name: spinner;
   }
-
   @-webkit-keyframes spinner {
     0% {
       opacity: 1;
@@ -81,88 +79,66 @@
     width: 120px;
     height: 120px;
     -webkit-animation: spin 1s linear infinite;
-    animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
   }
-
   @-webkit-keyframes spin {
     0% {
       -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
+              transform: rotate(0deg);
     }
     100% {
       -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
+              transform: rotate(360deg);
     }
   }
   @keyframes spin {
     0% {
       -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
+              transform: rotate(0deg);
     }
     100% {
       -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
+              transform: rotate(360deg);
     }
   }
   #bloc_page {
     width: auto;
   }
-
   .explore {
-    left: 35%;
+    left: 45%;
   }
-
   .filterContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: auto;
   }
-
-  .filterContainer .filterBtn {
-    max-width: 45%;
+  s.filterContainer .filterBtn {
+    width: 610px;
   }
-
-  .contentContainer a {
-    width: 354px;
-  }
-
-  .contentContainer h3 {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: 1/1/2/3;
-  }
-
   #restaurants {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 354px [2];
-    grid-template-columns: repeat(2, 354px);
-    -ms-grid-rows: 80px auto [2];
-    grid-template-rows: 80px repeat(2, auto);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+    -ms-grid-rows: 80px auto;
+        grid-template-rows: 80px auto;
+    gap: 20px 20px;
   }
-
-  .heart {
-    width: 25px;
-    height: 25px;
-    right: 20px;
-    position: absolute;
-    top: 15px;
+  .contentContainer h3 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
   }
 }
-/*# sourceMappingURL=style_tab.css.map */
-
-/*# sourceMappingURL=style_tab.css.map */
+/*# sourceMappingURL=style_desktop.css.map */

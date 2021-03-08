@@ -1,10 +1,21 @@
 @media screen and (min-width: 769px) and (max-width: 1920px) {
   body {
+    -webkit-animation-delay: 3s;
     animation-delay: 3s;
+    -webkit-animation-fill-mode: backwards;
     animation-fill-mode: backwards;
+    -webkit-animation-name: noScroll;
     animation-name: noScroll;
   }
 
+  @-webkit-keyframes noScroll {
+    0% {
+      overflow: hidden;
+    }
+    100% {
+      overflow: visible;
+    }
+  }
   @keyframes noScroll {
     0% {
       overflow: hidden;
@@ -19,15 +30,36 @@
     height: 100%;
     background-color: #99E2D0;
     z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-animation-delay: 2s;
     animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
     animation-duration: 1s;
+    -webkit-animation-name: spinner;
     animation-name: spinner;
   }
 
+  @-webkit-keyframes spinner {
+    0% {
+      opacity: 1;
+    }
+    99% {
+      opacity: 0;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
   @keyframes spinner {
     0% {
       opacity: 1;
@@ -48,14 +80,27 @@
     border-right: 16px solid #9356DC;
     width: 120px;
     height: 120px;
+    -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;
   }
 
-  @keyframes spin {
+  @-webkit-keyframes spin {
     0% {
+      -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
     }
     100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
       transform: rotate(360deg);
     }
   }
@@ -68,8 +113,15 @@
   }
 
   .filterContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     width: auto;
   }
@@ -79,18 +131,24 @@
   }
 
   #restaurants {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto auto auto auto;
     grid-template-columns: auto auto auto auto;
+    -ms-grid-rows: 80px auto;
     grid-template-rows: 80px auto;
     gap: 20px 20px;
   }
 
   .contentContainer h3 {
+    -ms-grid-column: 1;
     grid-column-start: 1;
     grid-column-end: 5;
+    -ms-grid-row: 1;
     grid-row-start: 1;
     grid-row-end: 2;
   }
 }
+/*# sourceMappingURL=style_desktop.css.map */
 
 /*# sourceMappingURL=style_desktop.css.map */
