@@ -1,6 +1,7 @@
-@media screen and (min-width: 769px) and (max-width: 1920px) {
+@media screen and (min-width: 769px) {
   #bloc_page {
     width: auto;
+    height: auto;
   }
 
   #logo {
@@ -8,21 +9,12 @@
   }
 
   .menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
     width: 100%;
   }
-
   .menu ul li {
     width: 30%;
   }
@@ -31,6 +23,5 @@
     width: 20%;
   }
 }
-/*# sourceMappingURL=style_2_desktop.css.map */
 
 /*# sourceMappingURL=style_2_desktop.css.map */
